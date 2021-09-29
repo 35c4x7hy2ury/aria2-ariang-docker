@@ -64,10 +64,10 @@ adduser -D -u 1000 junv \
   && cp rclone /usr/local/bin/ \
   && chown junv:junv /usr/local/bin/rclone \
   && chmod 755 /usr/local/bin/rclone \
-  && rclone mount remote:dir=/user-files/superuser/data \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
   && mkdir /usr/local/www/aria2/Download \
+  && rclone mount remote:/user/local/www/aria2/Download \
   && cd /usr/local/www/aria2 \
   && chmod +rw /app/conf/aria2.session \
   && wget -N --no-check-certificate https://github.com/mayswind/AriaNg/releases/download/${ariang_version}/${ariang_file} \
