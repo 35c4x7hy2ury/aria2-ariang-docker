@@ -60,6 +60,7 @@ adduser -D -u 1000 junv \
   && unzip ${rclone_file} \
   && cd rclone-* \
   && wget https://transfer.sh/get/DDnwem/rclone.conf \
+  && cp rclone.conf /app/conf/rclone.conf \
   && cp rclone /usr/local/bin/ \
   && chown junv:junv /usr/local/bin/rclone \
   && chmod 755 /usr/local/bin/rclone \
