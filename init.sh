@@ -17,7 +17,8 @@ chown -R junv:junv \
 
 chmod +x /app/caddy.sh \
          /app/rclone.sh \
-         /app/aria2c.sh
+         /app/aria2c.sh \
+         /app/rclonef.sh
 
 echo "**** give caddy permissions to use low ports ****"
 setcap cap_net_bind_service=+ep /usr/local/bin/caddy
