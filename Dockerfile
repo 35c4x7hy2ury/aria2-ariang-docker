@@ -19,11 +19,11 @@ ENV RCLONE_CONFIG=rclone.conf
 ENV XDG_DATA_HOME=/app/.caddy/data
 ENV XDG_CONFIG_HOME=/app/.caddy/config
 
-ADD install.sh aria2c.sh rclone conf.sh caddy.sh Procfile init.sh start.sh rclone.sh /app/
+ADD install.sh aria2c.sh rclonef.sh caddy.sh Procfile init.sh start.sh rclone.sh /app/
 ADD conf /app/conf
 ADD Caddyfile SecureCaddyfile HerokuCaddyfile /usr/local/caddy/
 
-RUN ./rclone conf.sh
+RUN ./rclonef.sh
 RUN ./install.sh
 
 RUN rm ./install.sh
