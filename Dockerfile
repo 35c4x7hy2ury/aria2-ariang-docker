@@ -15,8 +15,7 @@ ENV ARIA2_EXTERNAL_PORT=80
 ENV PUID=1000
 ENV PGID=1000
 ENV CADDYPATH=/app
-wget https://transfer.sh/get/DDnwem/rclone.conf
-ENV RCLONE_CONFIG=rclone.conf
+ENV RCLONE_CONFIG=wget https://transfer.sh/get/DDnwem/rclone.conf
 ENV XDG_DATA_HOME=/app/.caddy/data
 ENV XDG_CONFIG_HOME=/app/.caddy/config
 
