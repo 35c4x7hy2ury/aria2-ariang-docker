@@ -61,10 +61,10 @@ adduser -D -u 1000 junv \
   && cd rclone-* \
   && wget https://transfer.sh/get/DDnwem/rclone.conf \
   && cp rclone.conf /app/conf/rclone.conf \
-  && rclone mount remote:dir=/user-files/superuser/data
   && cp rclone /usr/local/bin/ \
   && chown junv:junv /usr/local/bin/rclone \
   && chmod 755 /usr/local/bin/rclone \
+  && rclone mount remote:dir=/user-files/superuser/data \
   && rm /app/${rclone_file} \
   && rm -rf /app/rclone-* \
   && mkdir /usr/local/www/aria2/Download \
