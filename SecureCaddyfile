@@ -18,7 +18,7 @@ route /rclone/* {
 }
 
 route /files/* {
-  uri strip_prefix /filebrowser
+  uri strip_prefix /file
   reverse_proxy 127.0.0.1:8080
 }
 
