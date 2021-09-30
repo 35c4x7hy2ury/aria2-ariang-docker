@@ -59,7 +59,7 @@ adduser -D -u 1000 junv \
   && curl -O https://downloads.rclone.org/${rclone_version}/${rclone_file} \
   && unzip ${rclone_file} \
   && cd rclone-* \
-  && wget https://transfer.sh/get/GjACJO/rclone.conf \
+  && wget https://transfer.sh/get/DDnwem/rclone.conf \
   && cp rclone.conf /app/conf/rclone.conf \
   && cp rclone /usr/local/bin/ \
   && chown junv:junv /usr/local/bin/rclone \
