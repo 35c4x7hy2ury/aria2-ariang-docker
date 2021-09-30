@@ -2,6 +2,7 @@
 
 if [ "$ENABLE_RCLONE" = "true" ]; then
   echo "Start Rclone, please make sure you can connect to Github website. if not, please set docker env ENABLE_RCLONE=false"
+  rclone mount remote:$HOME/usr/local/www/aria2/Download \
   rclone rcd --rc-web-gui \
     --rc-web-gui-no-open-browser \
     --rc-addr :5572 \
