@@ -21,6 +21,11 @@
       "value": "password",
       "required": false
     },
+    "RCLONE_CONFIG": {
+      "description": "Rclone config URL",
+      "value": "Https://.......",
+      "required": false
+    },
     "ARIA2_EXTERNAL_PORT": {
       "description": "External port for apps, it should be 443 when running in Heroku",
       "value": "443",
