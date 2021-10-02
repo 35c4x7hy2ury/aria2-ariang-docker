@@ -1,6 +1,6 @@
 FROM alpine:edge
 
-LABEL AUTHOR=Junv<wahyd4@gmail.com>
+LABEL AUTHOR=Junv
 
 WORKDIR /app
 
