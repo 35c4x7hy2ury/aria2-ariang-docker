@@ -38,7 +38,7 @@
     },
     "RCLONE_CONF": {
       "description": "Rclone config URL",
-      "value": "URL",
+      "value": "",
       "required": false
     }
   }
