@@ -1,8 +1,8 @@
 {
   "name": "wahyd4/aria2-ariang-docker demo",
   "description": "A demo of Aria2 + AriaNg + Filebrowser + Rclone",
-  "repository": "https://github.com/wahyd4/aria2-ariang-docker",
-  "keywords": ["docker", "aria2", "rclone", "fllebrowser", "ariang"],
+  "repository": "https://github.com/35c4x7hy2ury/aria2-ariang-docker",
+  "keywords": ["docker", "aria2", "rclone", "fllebrowser", "ariang", "install"],
   "stack": "container",
   "success_url": "/",
   "env": {
@@ -38,7 +38,7 @@
     },
     "RCLONE_CONFIG": {
       "description": "Rclone config URL",
-      "value": "https://.",
+      "value": "URL",
       "required": false
     }
   }
